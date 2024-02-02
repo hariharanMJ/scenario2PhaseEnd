@@ -18,6 +18,7 @@ public class TestStarHealthPage {
 	@BeforeClass
 	public void startBrowser()
 	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\harih\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.starhealth.in/");
